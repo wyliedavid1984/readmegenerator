@@ -19,15 +19,15 @@ const questions = [
 
     },
     {
-        type: 'confirm',
+        type: 'input',
         name: 'installation',
         message: 'Will this require an installation?',
-        default: false,
-        // displayData: () =>{
-        //     if(installation){
+        default: "If no just hit enter"
+        // when: function () {
+        //     if (true) {
 
+        //         }
         //     }
-        // }
     },
     {
         type: 'input',
@@ -35,57 +35,58 @@ const questions = [
         message: 'What are the usages for the application?'
     },
     {
-        type: 'confirm',
-        name: 'contribution',
-        message: 'Were there any collaborators/ or third party assets?',
-        default: true,
-        validate:
-        // addCollaborators: () =>{
-        //     if(contribution){
-        //         type: input,
-        //         name: collaborators,
-        //         message: "Who are they?"
+        type: 'input',
+        name: 'contributions',
+        message: 'How can any make contributions?',
+        default: "If no just hit enter",
+        // when: function () {
+        //     if (true) {
+
+        //         }
         //     }
-        // }
-    }, {
+    },
+    {
         type: 'list',
         name: 'license',
         message: 'What type of license would you like to apply?',
         choices: [{
                 key: 'Apache',
-                name: 'apacheLincense',
-                value: '![License](https: //img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
-            },
-            {
-                key: 'GNU_GPLv3',
-                name: "gnuLicense",
-                value: "![License: GPL v3](https: //img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
-            },
-            {
-                key: "MIT",
-                name: "mitLicense",
-                value: "![License: MIT](https: //img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
-            },
-            {
-                key: "ISC",
-                name: "iscLicense"
-                value: "![License: ISC](https: //img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)"
+                name: 'apacheLicense',
+                value: '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
             },
             {
                 key: "BSD",
                 name: "bsdLicense",
-                value: "![License](https: //img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
+                value: "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
+            },
+            {
+                key: 'GNU_GPLv3',
+                name: "gnuLicense",
+                value: "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+            },
+            {
+                key: "ISC",
+                name: "iscLicense",
+                value: "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)"
+            },
+            {
+                key: "MIT",
+                name: "mitLicense",
+                value: "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
             }
+
         ]
     },
     {
-        type: 'confirm',
+        type: 'input',
         name: 'tests',
         message: 'Do you have any test for users to run?',
-        default: false,
-        validate: function (){
-            if(true
-        }
+        default: "If no just hit enter",
+          // when: function () {
+          //     if (true) {
+
+          //         }
+          //     }
     },
     {
         type: 'input',
@@ -110,7 +111,7 @@ const questions = [
 // // function to write README file
 function writeToFile(fileName, data) {
 
-    fs.writeFile(`./sample/${fileName}`, data, (err) => {
+    fs.writeFile(`../sample/${fileName}`, data, (err) => {
         err ? console.error(err) :
             console.log('Commit logged!')
     })
