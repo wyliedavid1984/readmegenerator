@@ -22,6 +22,7 @@ click on the badge for more info.
 -[Test](#Tests)
 
 -[Contact](#Contact)
+
 </details>
 
 ## Description
@@ -30,8 +31,10 @@ ${data.description}
   
 ## Installation
 
-${data.installation}
-  
+
+    ${data.installation}
+
+
 ## Usage
 
 ${data.usage}
@@ -44,11 +47,13 @@ ${data.contributions}
 
 ## Tests
 
-${data.tests}
+
+    ${data.tests}
+
 
 ## Credits
 
-## Questions
+## Contact
 
 * [${data.gitHubUser} GitHub account](https://github.com/${data.gitHubUser})
 

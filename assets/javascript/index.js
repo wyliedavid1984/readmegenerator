@@ -14,6 +14,24 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'gitHubUser',
+        message: 'What is you github user name?',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?',
+        validate: function (value) {
+            let mail = value.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+            if (mail) {
+                return true;
+            } else {
+                return "Please enter a valid Email address"
+            }
+        }
+    },
+    {
+        type: 'input',
         name: 'description',
         message: 'Please enter a description of the project?'
 
@@ -22,28 +40,18 @@ const questions = [
         type: 'input',
         name: 'installation',
         message: 'Will this require an installation?',
-        default: "If no just hit enter"
-        // when: function () {
-        //     if (true) {
+        default: "npm i"
 
-        //         }
-        //     }
     },
     {
         type: 'input',
         name: 'usage',
-        message: 'What are the usages for the application?'
+        message: 'What is the application used for?'
     },
     {
         type: 'input',
         name: 'contributions',
-        message: 'How can any make contributions?',
-        default: "If no just hit enter",
-        // when: function () {
-        //     if (true) {
-
-        //         }
-        //     }
+        message: 'How can anyone make contributions?',
     },
     {
         type: 'list',
@@ -81,31 +89,9 @@ const questions = [
         type: 'input',
         name: 'tests',
         message: 'Do you have any test for users to run?',
-        default: "If no just hit enter",
-          // when: function () {
-          //     if (true) {
-
-          //         }
-          //     }
-    },
-    {
-        type: 'input',
-        name: 'gitHubUser',
-        message: 'What is you github user name?',
-    },
-    {
-        type: 'input',
-        name: 'email',
-        message: 'What is your email address?',
-        validate: function (value) {
-            let mail = value.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
-            if (mail) {
-                return true;
-            } else {
-                return "Please enter a valid Email address"
-            }
-        }
+        default: "npm test",
     }
+
 ];
 
 // // function to write README file
@@ -122,8 +108,6 @@ function writeToFile(fileName, data) {
 // // function to initialize program
 function init() {
     inquirer.prompt(questions).then((response) => {
-
-        console.log(response);
 
         writeToFile("README.md", generateMarkdown(response));
     });

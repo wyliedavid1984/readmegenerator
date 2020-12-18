@@ -1,8 +1,8 @@
-# lkj
+# Laughing
 
 ## License Badge
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 click on the badge for more info.
 
@@ -20,35 +20,40 @@ click on the badge for more info.
 -[Test](#Tests)
 
 -[Contact](#Contact)
+
 </details>
 
 ## Description
   
-asdf
+laughter
   
 ## Installation
 
-false
-  
+
+    no instal
+
+
 ## Usage
 
-asd
+laughing out loud
 
 ### Screen Shots
   
 ## Contributors
 
-false
+make sure to laugh out loud
 
 ## Tests
 
-false
 
-##Credits
+    no test just laughing here
 
-## Contact Info
 
-* [ GitHub account](https://github.com/)
+## Credits
 
-* [n@n.net]
+## Contact
+
+* [wylie GitHub account](https://github.com/wylie)
+
+* [wylie@holo.net]
 
