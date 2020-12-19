@@ -4,7 +4,7 @@ return `# ${data.projectName}
 
 ## License Badge
 
-${data.license}
+${data.license[0]}
 
 click on the badge for more info.
 
@@ -52,6 +52,11 @@ ${data.contributions}
 
 
 ## Credits
+
+
+## License
+
+${data.license[1]}
 
 ## Contact
 

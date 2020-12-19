@@ -1,8 +1,8 @@
-# Laughing
+# Project Name
 
 ## License Badge
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 click on the badge for more info.
 
@@ -25,35 +25,40 @@ click on the badge for more info.
 
 ## Description
   
-laughter
+Laughing
   
 ## Installation
 
 
-    no instal
+    npm i
 
 
 ## Usage
 
-laughing out loud
+laughter
 
 ### Screen Shots
   
 ## Contributors
 
-make sure to laugh out loud
+laughing out loud
 
 ## Tests
 
 
-    no test just laughing here
+    npm test
 
 
 ## Credits
+
+
+## License
+
+BSD
 
 ## Contact
 
 * [wylie GitHub account](https://github.com/wylie)
 
-* [wylie@holo.net]
+* [wylie@io.net]
 
